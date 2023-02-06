@@ -1,0 +1,84 @@
+\documentclass{article}
+% Preambolo
+\usepackage{graphicx} % per inserimento immagini
+\usepackage{amsmath} % per inserimento formule matematiche
+\usepackage[italian]{babel}
+
+\title{Titolo del documento}
+\author{Taiwo Solomon}
+\date{Lunedì 06 Febbraio 2023}
+
+% corpo
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    Abstract dell'articolo
+\end{abstract}
+
+\tableofcontents
+
+\section{Sezione di introduzione}\label{sec:prova}
+Ciao da LaTex
+
+\section*{Conclusioni}
+Un paragrafo di testo
+un alro paragrafo\footnote{Contenuto della nota} che si riferisce alla sezione\ref{sec:prova} a pagina\pageref{sec:prova}
+
+\section{Elenchi puntati e numerati}
+
+\begin{itemize}
+    \item primo elemento
+    \item secondo elemento
+\end{itemize}
+
+\begin{enumerate}
+    \item primo elemento
+    \item secondo elemento
+\end{enumerate}
+
+\section{Allineamento paragrafi}
+
+\begin{flushright}
+    Testo allineato a destra
+\end{flushright}
+
+\begin{flushleft}
+    Testo allineato a sinistra
+\end{flushleft}
+
+\begin{center}
+    testo centrato
+\end{center}
+
+\section{Citazioni}
+
+\begin{quote}
+    Citazione dotta
+\end{quote}
+
+\section{Verbatim}
+
+\begin{verbatim}
+    print("Ciao Mondo");
+\end{verbatim}
+
+\section{Immagini}
+
+\includegraphics[width=\textwidth]{prova.jpg}
+
+\section{Matematica}
+
+Sia $f(x)$ una funzione, allora l'integrale di f vale zero
+$$\iint f(x)dx = 0$$
+
+\begin{equation}
+    \iint f(x)dx = 0\label{eq:test}
+\end{equation}
+
+Come si vede dall'equazione \ref{eq:test}
+
+Grazie al prof. Andrea Pollini per il tutorial su LaTeX
+
+\end{document}
