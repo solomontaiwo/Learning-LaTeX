@@ -1,0 +1,9 @@
+\documentclass{article}
+\documentclass{letter}
+\documentclass{beamer} % Per generare dei lucidi presentativi, da integrare con \begin{frame}{Titolo frame}
+
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel} % Per formattazione corretta in italiano
+\usepackage{graphicx} % Per inserire immagini: per inserimento usare comando \includegraphics[height=2cm]{example-image}
+\usepackage{lipsum} % Genera testo fittizio come riempitivo: comando \lipsum[1-4]
+

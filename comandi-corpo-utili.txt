@@ -1,0 +1,9 @@
+\begin{frame}{Un primo frame}
+    Un po' di testo.
+\end{frame}
+
+\includegraphics[height=2cm]{example-image}
+
+\lipsum[1-4] % Vogliamo solo qualche capoverso di riempimento
+
+\bigbreak
