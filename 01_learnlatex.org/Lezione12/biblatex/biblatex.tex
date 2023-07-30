@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\usepackage[style=authoryear]{biblatex} % impostazioni di biblatex
+\addbibresource{learnlatex.bib}         % database bibliografico con l'estensione .bib
+
+\begin{document}
+
+La galleria di esempi matematici è presa da \autocite{Graham1995}.
+
+Alcune citazioni più complesse: \parencite{Graham1995} o
+\textcite{Thomas2008} o anche \citetitle{Graham1995}.
+
+\autocite[56]{Thomas2008}
+
+\autocite[See][45-48]{Graham1995}
+
+Citazione multipla: \autocite{Thomas2008,Graham1995}.
+
+\printbibliography % questo comando stampa la bibliografia
+
+\end{document}

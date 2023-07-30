@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{natbib}
+\usepackage[italian]{babel}
+
+\begin{document}
+
+La galleria di esempi matematici è presa da \citet{Graham1995},
+mentre c'è un po' di chimica in \citet{Thomas2008}.
+
+Alcune citazioni tra parentesi: \citep{Graham1995}
+e \citep[p.~56]{Thomas2008}.
+
+\citep[Vedi][pp.~45–48]{Graham1995}
+
+Citazione multipla: \citep{Graham1995,Thomas2008}.
+
+\bibliographystyle{plainnat} % stile delle citazioni nel corpo del documento
+\bibliography{learnlatex}    % database bibliografico senza l'estensione .bib
+
+\end{document}

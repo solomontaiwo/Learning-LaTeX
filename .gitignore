@@ -7,4 +7,8 @@
 *.out
 *.snm
 *.toc
+*.xml
+*.bcf
+*.bbl
+*.blg
 .DS_Store

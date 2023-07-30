@@ -7,3 +7,4 @@
 \usepackage{graphicx} % Per inserire immagini: per inserimento usare comando \includegraphics[height=2cm]{example-image}
 \usepackage{lipsum} % Genera testo fittizio come riempitivo: comando \lipsum[1-4]
 \usepackage[parfill]{parskip} % Per separare i capoversi e mettere tra l'uno e l'altro dello spazio verticale (una riga vuota)
+\usepackage{natbib} % Per generare riferimenti bibliografici: occorre l'esistenza di un file .bib e l'esplicitazione nel corpo del nome del file (es. \bibliography{learnlatex})
