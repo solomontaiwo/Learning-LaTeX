@@ -6,4 +6,4 @@
 \usepackage[italian]{babel} % Per formattazione corretta in italiano
 \usepackage{graphicx} % Per inserire immagini: per inserimento usare comando \includegraphics[height=2cm]{example-image}
 \usepackage{lipsum} % Genera testo fittizio come riempitivo: comando \lipsum[1-4]
-
+\usepackage[parfill]{parskip} % Per separare i capoversi e mettere tra l'uno e l'altro dello spazio verticale (una riga vuota)
