@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+
+\begin{document}
+
+\begin{tabular}{lll}
+    Animale & Cibo & Taglia \\
+    cane    & carne & media \\
+    cavallo & fieno & grande \\
+    rana    & mosche & piccola \\
+\end{tabular}
+
+\bigbreak
+
+\begin{tabular}{cp{9cm}}
+    Animale & Descrizione \\
+    cane    & Il cane è un membro del genere Canis, che fa parte dei canidi 
+               simili ai lupi, ed è il carnivoro terrestre più largamente 
+               diffuso. \\  
+    gatto   & Il gatto è una specie domestica di piccolo mammifero carnivoro. 
+               È l'unica specie domestica della famiglia Felidae ed è spesso 
+               indicato come il gatto domestico per distinguerlo dai membri 
+               selvatici della famiglia. \\
+\end{tabular}
+
+\bigbreak
+
+\begin{tabular}{*{3}{l}}
+    Animale & Cibo   & Taglia  \\
+    cane    & carne  & media   \\
+    cavallo & fieno  & grande  \\
+    rana    & mosche & piccola \\
+\end{tabular}
+
+\bigbreak
+
+\begin{tabular}{lll}
+    \toprule                       % filetto iniziale
+    Animale & Cibo   & Taglia  \\
+    \midrule                       % filetto intermedio
+    cane    & carne  & media   \\
+    cavallo & fieno  & grande  \\
+    rana    & mosche & piccola \\
+    \bottomrule                    % filetto finale
+\end{tabular}
+
+\bigbreak
+
+\begin{tabular}{lll}
+    \toprule
+    Animale & Cibo   & Taglia  \\
+    \midrule
+    cane    & carne  & media   \\
+    \cmidrule{1-2}                 % filetto che copre la prima e la seconda colonna
+    cavallo & fieno  & grande  \\  
+    \cmidrule{1-1}                 % filetto che copre la prima colonna
+    \cmidrule{3-3}                 % filetto che copre la terza colonna
+    rana    & mosche & piccola \\
+    \bottomrule
+\end{tabular}
+
+\bigbreak
+
+\begin{tabular}{lll}
+    \toprule
+    Animale & Cibo   & Taglia  \\
+    \midrule
+    cane    & carne  & media   \\
+    \cmidrule{1-2}
+    cavallo & fieno  & grande  \\
+    \cmidrule(r){1-1}             
+    \cmidrule(rl){2-2}            
+    \cmidrule(l){3-3}         
+    rana    & mosche & piccola \\
+    \bottomrule
+\end{tabular}
+
+\bigbreak
+
+\begin{tabular}{cp{9cm}}
+    \toprule
+    Animale  & Descrizione \\
+    cane     & Il cane è un membro del genere Canis, che fa parte dei canidi 
+               simili ai lupi, ed è il carnivoro terrestre più largamente 
+               diffuso. \\  
+    \addlinespace
+    gatto    & Il gatto è una specie domestica di piccolo mammifero carnivoro. 
+               È l'unica specie domestica della famiglia Felidae ed è spesso 
+               indicato come il gatto domestico per distinguerlo dai membri 
+               selvatici della famiglia. \\
+    \bottomrule
+\end{tabular}
+
+\bigbreak
+
+\begin{tabular}{lll}
+    \toprule
+    Animale   & Cibo   & Taglia  \\
+    \midrule
+    cane      & carne  & media   \\
+    cavallo   & fieno  & grande  \\
+    rana      & mosche & piccola \\
+    furlong   & \multicolumn{2}{c}{sconosciuto} \\
+    \bottomrule
+\end{tabular}
+
+\bigbreak
+
+\begin{tabular}{lll}
+    \toprule
+    \multicolumn{1}{c}{Animale} & \multicolumn{1}{c}{Cibo} & \multicolumn{1}{c}{Taglia} \\
+    \midrule
+    cane      & carne  & media   \\
+    cavallo   & fieno  & grande  \\
+    rana      & mosche & piccola \\
+    furlong   & \multicolumn{2}{c}{sconosciuto} \\
+    \bottomrule
+\end{tabular}
+
+\bigbreak
+
+\begin{tabular}{lll}
+    \toprule
+    Gruppo    & Animale  & Taglia  \\
+    \midrule
+    erbivoro  & cavallo  & grande  \\
+              & cervo    & media   \\
+              & coniglio & piccola \\
+    \addlinespace
+    carnivoro & cane     & media   \\
+              & gatto    & piccola \\
+              & leone    & grande  \\
+    \addlinespace
+    onnivoro  & corvo    & piccola \\
+              & orso     & grande  \\
+              & maiale   & media   \\
+    \bottomrule
+\end{tabular}
+
+\end{document}
